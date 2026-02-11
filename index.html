@@ -12,29 +12,31 @@
 
 <body>
     <main>
-        <h1>Quiz 1</h1>
-        <section>
-            <form id="form_bienvenida">
-                <label for="input_nombre">Nombre</label>
-                <input id="input_nombre" minlength="3" required />
-                <select id="input_mood">
-                    <option value="feliz">Feliz</option>
-                    <option value="serio">Serio</option>
-                    <option value="cansado">Cansado</option>
-                </select>
-                <button type="submit">Generar</button>
-                <button id="boton_reiniciar">Reiniciar</button>
-            </form>
-        </section>
-
-        <section>
-            <div id="result">
-
+        <div class="container">
+            <div class="header">
+                <h2>Quiz 1</h2>
             </div>
-        </section>
+            <form id="form" class="form">
+                <div class="form-field">
+                    <label for="input_nombre">Nombre</label>
+                    <input type="text" id="input_nombre" minlength="3" required />
+                    <select id="input_mood">
+                        <option value="feliz">Feliz</option>
+                        <option value="serio">Serio</option>
+                        <option value="cansado">Cansado</option>
+                    </select>
+                </div>
+                <div class="form-buttons">
+                    <button type="submit">Generar</button>
+                    <button id="boton_reiniciar">Reiniciar</button>
+                </div>
+            </form>
+        </div>
 
-        <footer>
+        <div id="result"></div>
 
+        <footer class="footer">
+            <h2>Entrega WEB-01 | Grupo: <span id="grupo"></span> | Código: <span id="codigo"></span></h2>
         </footer>
     </main>
     <script src="./index.js"></script>

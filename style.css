@@ -1,6 +1,9 @@
 :root {
-    --bg: #000026;
-    --card: #ffffff;
+    --bg: #023047;
+    --card_blue: #219ebc;
+    --card_orange: #fb8500;
+    --card_yellow: #ffb703;
+    --footer_blue: #8ecae6;
     --text: #5E85D9;
     --muted: #6b7280;
     --primary: #2563eb;
@@ -16,18 +19,93 @@
 
 body {
     background-color: var(--bg);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
 }
 
-.card {}
+.container {
+    background-color: #ffffff;
+    border-radius: var(--radius);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+}
 
-#form_bienvenida {
+.header {
+    background-color: #f7f7f7;
+    padding: 20px 30px;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.form {
+    padding: 30px 40px;
     display: flex;
-    align-items: center;
-    border: #ffffff solid 2px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-field {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.blue_card {
+    background-color: var(--card_blue);
+    padding: 2rem;
+    border-radius: var(--radius);
+}
+
+.orange_card {
+    background-color: var(--card_orange);
+    padding: 2rem;
+    border-radius: var(--radius);
+}
+
+.yellow_card {
+    background-color: var(--card_yellow);
+    padding: 2rem;
+    border-radius: var(--radius);
+    display: inline-block;
+    margin: 8px;
+}
+
+.footer {
+    background-color: var(--footer_blue);
+    display: flex;
+    justify-content: center;
+    font-size: 8px;
+    width: 100vw;
+    padding: 2px;
+    margin-top: 3rem;
+}
+
+.success {
+    border: var(--ok) solid 2px;
+}
+
+.error {
+    border: var(--danger) solid 2px;
+}
+
+/*
+#form_nombre {
+    display: flex;
     padding: 2px;
     justify-content: space-between;
     justify-items: center;
-    max-width: 600px;
 }
+*/
