@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EXAMEN WEB 1.0</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <h1>Quiz 1</h1>
+        <section>
+            <form id="form_bienvenida">
+                <label for="input_nombre">Nombre</label>
+                <input id="input_nombre" minlength="3" required />
+                <select id="input_mood">
+                    <option value="feliz">Feliz</option>
+                    <option value="serio">Serio</option>
+                    <option value="cansado">Cansado</option>
+                </select>
+                <button type="submit">Generar</button>
+                <button id="boton_reiniciar">Reiniciar</button>
+            </form>
+        </section>
+
+        <section>
+            <div id="result">
+
+            </div>
+        </section>
+
+        <footer>
+
+        </footer>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
